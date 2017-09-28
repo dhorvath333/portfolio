@@ -1,0 +1,41 @@
+@import '~styles.scss';
+
+.navbar {
+    min-height: 60px;
+    transition: 0.3s;
+}
+
+.header__ul {
+    list-style: none;
+}
+
+.header__nav {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.header__nav-background {
+    background-color: $background-color-dark;
+}
+
+.header__nav-item {
+    display: inline;
+    margin: 10px 15px;
+
+    a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFF;
+    
+        &:hover {
+            color: $main-color;
+        }
+    }
+}
+
+.navbar-toggler {
+    border-color: #ccc;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}

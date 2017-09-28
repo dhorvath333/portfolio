@@ -1,0 +1,99 @@
+@import '~styles.scss';
+
+.progress {
+    background: $background-color-dark;
+}
+
+.progress-bar {
+    background-color: $main-color;
+}
+
+.about__primary-area {
+    background: $background-color-light;
+    border-radius: 10px;
+    padding: 1.2rem;
+    margin-bottom: 3rem;
+
+    ul {
+        list-style: none;
+    }
+}
+
+.about__personal-info,
+.about__personal-info-list {
+    text-align: center;
+}
+
+.about__skills {
+    text-align: center;
+}
+
+.about__skill-list {
+    text-align: left;
+    overflow-y: auto;
+    max-height: 100%; 
+}
+
+.about__skill-item {
+    padding: 10px 0;
+}
+
+.about__highlight-text {
+    color: $main-color;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.about__profile-picture {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: url('~/assets/images/cv_pic.jpg') center center;
+    background-size: cover;
+    border: 2px solid $main-color;
+    margin: 10px auto 30px auto;
+}
+
+.about__button {
+    display: block;
+    width: 100%;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+
+    .fa {
+        margin-right: 10px;
+    }
+}
+
+.about__button-cv {
+    color: #FFF;
+    border-color: #FFF;
+
+    &:hover, &:focus {
+        color: $background-color-light;
+        background: #FFF;
+    }
+}
+
+.about__button-linkedin {
+    color: #0075B5;
+    border-color: #0075B5;
+
+    &:hover, &:focus {
+        color: #FFF;
+        background: #0075B5;
+    }
+}
+
+.about__button-github {
+    color: #93979C;
+    border-color: #93979C;
+
+    &:hover, &:focus {
+        color: #FFF;
+        background: #93979C;
+    }
+}

@@ -1,0 +1,79 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './assets/sass/colors';
+
+$title-font-size: 1.2rem;
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    //font-family: 'Raleway', sans-serif;
+    color: $text-color;
+}
+
+body {
+    background: $background-color-dark;
+}
+
+a {
+    text-decoration: none;
+    color: $text-color;
+    cursor: pointer;
+}
+
+button:hover,
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section {
+    min-height: 85%;
+}
+
+.section-title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ENABLE SECTIONS */
+
+$about-enabled: true;
+$portfolio-enabled: true;
+$services-enabled: false;
+$blog-enabled: false;
+$contact-enabled: true;
+
+#about, #about-nav-item {
+    @if not $about-enabled {
+        display: none;
+    }
+}
+
+#portfolio, #portfolio-nav-item {
+    @if not $portfolio-enabled {
+        display: none;
+    }
+}
+
+#services, #services-nav-item {
+    @if not $services-enabled {
+        display: none;
+    }
+}
+
+#blog, #blog-nav-item {
+    @if not $blog-enabled {
+        display: none;
+    }
+}
+
+#contact, #contact-nav-item {
+    @if not $contact-enabled {
+        display: none;
+    }
+}

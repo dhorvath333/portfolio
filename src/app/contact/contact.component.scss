@@ -1,0 +1,35 @@
+@import '~styles.scss';
+
+#contact {
+    background: $background-color-dark;
+}
+
+.contact__input-field {
+    width: 100%;
+    background: $background-color-light;
+    border: none;
+    padding: 10px;
+    color: #FFF;
+}
+
+.contact-section .fa {
+    color: $main-color;
+    font-size: 2em;
+}
+
+.contact__info {
+    text-align: center;
+
+    p {
+        font-size: 14px;
+        font-style: italic;
+    }
+
+    h4 {
+        font-weight: bold;
+    }
+}
+
+.contact__info > * {
+    margin-bottom: 10px;
+}
